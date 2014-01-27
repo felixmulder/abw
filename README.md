@@ -25,4 +25,5 @@ If you define these variables in your theme.lua (which you should imo) then
 instead of "beautiful.battery..." use "theme.battery..." or whatever variable
 you choose to build your theme within.
 
-Cheerio!
+I have included a couple of suitable icons in the icons folder. These are from
+the Faenza theme: http://gnome-look.org/content/show.php/Faenza?content=128143
