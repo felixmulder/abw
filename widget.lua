@@ -33,8 +33,8 @@ local function read()
     local currentNow = tonumber(fh:read("*l"))
     fh:close()
 
-    local hoursLeft = math.floor(minutesLeft / 60)
     local minutesLeft = math.floor((energyNow * 1e-5 / (currentNow * voltageNow * 1e-12)) * 60 + 0.5)
+    local hoursLeft = math.floor(minutesLeft / 60)
 
     if hoursLeft == 1 then
       timeLeft = hoursLeft .. " hour and " .. minutesLeft % 60 .. " min left"
